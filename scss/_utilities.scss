@@ -1,0 +1,114 @@
+//text styles
+
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+//background
+.bg {
+  &-primary {
+    @include set-background($primary-color);
+  }
+
+  &-light {
+    @include set-background($light-color);
+    border: 1px solid #ccc;
+  }
+
+  &-dark {
+    @include set-background($dark-color);
+  }
+
+  &-success {
+    @include set-background($success-color);
+  }
+
+  &-danger {
+    @include set-background($danger-color);
+  }
+
+  &-white {
+    @include set-background(#fff);
+    border: 1px solid #ccc;
+  }
+}
+
+//buttons
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  outline: none;
+  text-align: center;
+  transition: all 0.2 ease-in;
+
+  &-primary {
+    @include set-background($primary-color);
+
+    &:hover {
+      background: darken($primary-color, 5%);
+    }
+  }
+
+  &-light {
+    @include set-background($light-color);
+
+    &:hover {
+      background: lighten($dark-color, 20%);
+      color: #fff;
+    }
+  }
+
+  &-dark {
+    @include set-background($dark-color);
+
+    &:hover {
+      background: darken($dark-color, 5%);
+    }
+  }
+
+  &-success {
+    @include set-background($success-color);
+
+    &:hover {
+      background: darken($success-color, 5%);
+    }
+  }
+
+  &-danger {
+    @include set-background($danger-color);
+
+    &:hover {
+      background: darken($danger-color, 5%);
+    }
+  }
+}
+
+//overlay
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
