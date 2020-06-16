@@ -1,5 +1,14 @@
-//text styles
+//* container
+.container {
+  max-width: $max-width;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
 
+//* text styles
 .x-large {
   font-size: 4rem;
   line-height: 1.2;
@@ -17,7 +26,25 @@
   margin-bottom: 1rem;
 }
 
-//background
+.text {
+  &-primary {
+    color: $primary-color;
+  }
+
+  &-dark {
+    color: $dark-color;
+  }
+
+  &-success {
+    color: $success-color;
+  }
+
+  &-danger {
+    color: $danger-color;
+  }
+}
+
+//* background
 .bg {
   &-primary {
     @include set-background($primary-color);
@@ -46,7 +73,7 @@
   }
 }
 
-//buttons
+//* buttons
 .btn {
   display: inline-block;
   background: #fff;
@@ -103,7 +130,34 @@
   }
 }
 
-//overlay
+//* alert
+.alert {
+  padding: 0.8rem;
+  margin: 1rem;
+  opacity: 0.9;
+  background: $light-color;
+  color: #333;
+  border-radius: 3.5px;
+  font-size: 1.2rem;
+
+  &.alert-primary {
+    @include set-background($primary-color);
+  }
+
+  &.alert-dark {
+    @include set-background($dark-color);
+  }
+
+  &.alert-success {
+    @include set-background($success-color);
+  }
+
+  &.alert-danger {
+    @include set-background($danger-color);
+  }
+}
+
+//* overlay
 .dark-overlay {
   height: 100%;
   width: 100%;
