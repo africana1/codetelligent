@@ -117,7 +117,7 @@
 }
 
 .text-danger {
-  color: #dc3545;
+  color: #ce4452;
 }
 
 .round-img {
@@ -130,7 +130,7 @@
 }
 
 .bg-light {
-  background: #e6e6e6;
+  background: #e0e0e0;
   color: #333;
   border: 1px solid #ccc;
 }
@@ -146,7 +146,7 @@
 }
 
 .bg-danger {
-  background: #dc3545;
+  background: #ce4452;
   color: #fff;
 }
 
@@ -182,7 +182,7 @@
 }
 
 .btn-light {
-  background: #e6e6e6;
+  background: #e0e0e0;
   color: #333;
 }
 
@@ -210,19 +210,19 @@
 }
 
 .btn-danger {
-  background: #dc3545;
+  background: #ce4452;
   color: #fff;
 }
 
 .btn-danger:hover {
-  background: #d32535;
+  background: #c53442;
 }
 
 .alert {
   padding: 0.8rem;
   margin: 1rem;
   opacity: 0.9;
-  background: #e6e6e6;
+  background: #e0e0e0;
   color: #333;
   border-radius: 3.5px;
   font-size: 1.2rem;
@@ -244,7 +244,7 @@
 }
 
 .alert.alert-danger {
-  background: #dc3545;
+  background: #ce4452;
   color: #fff;
 }
 
@@ -290,7 +290,7 @@
 }
 
 body {
-  background: #e6e6e6;
+  background: #e0e0e0;
   font-family: 'Yatra One';
   font-style: normal;
   font-weight: 500;
