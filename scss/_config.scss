@@ -38,6 +38,23 @@ $spaceamount: (1, 2, 3, 4, 5);
     margin: #{$space}rem 0;
   }
 
+  //directional margin
+  .mt-#{$space} {
+    margin-top: #{$space}rem;
+  }
+
+  .mr-#{$space} {
+    margin-right: #{$space}rem;
+  }
+
+  .mb-#{$space} {
+    margin-bottom: #{$space}rem;
+  }
+
+  .mr-#{$space} {
+    margin-right: #{$space}rem;
+  }
+
   //all around padding
   .p-#{$space} {
     padding: #{$space}rem;
@@ -46,5 +63,22 @@ $spaceamount: (1, 2, 3, 4, 5);
   //vertical padding
   .py-#{$space} {
     padding: #{$space}rem 0;
+  }
+
+  //directional padding
+  .pt-#{$space} {
+    padding-top: #{$space}rem;
+  }
+
+  .pr-#{$space} {
+    padding-right: #{$space}rem;
+  }
+
+  .pb-#{$space} {
+    padding-bottom: #{$space}rem;
+  }
+
+  .pr-#{$space} {
+    padding-right: #{$space}rem;
   }
 }
